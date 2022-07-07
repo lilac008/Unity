@@ -16,18 +16,21 @@ public class BoxController : MonoBehaviour
         
     }
 
+    /*
 
-    public void OnCollisionEnter(Collision collision) /// 
+    public void OnCollisionEnter(Collision coll) /// 
     {
-        print("面倒惯积 Enter!" + collision.gameObject.name);
+        print("面倒惯积 Enter!" + coll.gameObject.name);
     }
 
 
 
-    public void OnCollisionExit(Collision collision) 
+    public void OnCollisionExit(Collision coll) 
     {
         print("面倒惯积 Exit!");
     }
+
+    */
 
 
 

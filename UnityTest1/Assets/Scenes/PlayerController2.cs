@@ -10,37 +10,17 @@ public class PlayerController2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ///해당 스크립트가 적용된 오브젝트에서 Rigidbody Component 생성
-        playerRd = GetComponent<Rigidbody>();        
+        playerRd = GetComponent<Rigidbody>();        ///해당 스크립트가 적용된 오브젝트에서 Rigidbody Component 생성
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftArrow) == true)
-        {
-            playerRd.AddForce(-speed, 0f, 0f);              ///x,y,z
-        }
-
-        if (Input.GetKey(KeyCode.RightArrow) == true)
-        {
-            playerRd.AddForce(speed, 0f, 0f);
-        }
-
-        if (Input.GetKey(KeyCode.UpArrow) == true)
-        {
-            playerRd.AddForce(0f, 0f, speed);
-        }
-
-        if (Input.GetKey(KeyCode.DownArrow) == true)
-        {
-            playerRd.AddForce(0f, 0f, -speed);
-        }
-
-        if (Input.GetKey(KeyCode.Space) == true)
-        {
-            playerRd.AddForce(0f, speed, 0f);
-        }
+        if (Input.GetKey(KeyCode.LeftArrow) == true) {playerRd.AddForce(-speed, 0f, 0f);} ///x,y,z
+        if (Input.GetKey(KeyCode.RightArrow) == true){playerRd.AddForce(speed, 0f, 0f); }
+        if (Input.GetKey(KeyCode.UpArrow) == true)   {playerRd.AddForce(0f, 0f, speed);}
+        if (Input.GetKey(KeyCode.DownArrow) == true) {playerRd.AddForce(0f, 0f, -speed);}
+        if (Input.GetKey(KeyCode.Space) == true)     {playerRd.AddForce(0f, speed, 0f);}
 
 
 

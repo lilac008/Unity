@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class BlockBallController : MonoBehaviour
 {
-    private Rigidbody ballRd;
     public float speed = 0.0f;
+
+    private Rigidbody ballRd;
     Vector3 startPos;
 
     // Start is called before the first frame update
@@ -23,33 +24,33 @@ public class BlockBallController : MonoBehaviour
 
     }
 
-    public void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision other)
     {
-        if (collision.gameObject.CompareTag("WALL") || collision.gameObject.CompareTag("RACKET"))
+        if (other.gameObject.CompareTag("WALL") || other.gameObject.CompareTag("RACKET"))
         {
             Vector3 currPos = transform.position;
 
             Vector3 incomVec = currPos - startPos;
-            Vector3 normalVec = collision.contacts[0].normal;
+            Vector3 normalVec = other.contacts[0].normal;
             Vector3 reflectVec = Vector3.Reflect(incomVec, normalVec);
             reflectVec = reflectVec.normalized;
 
             ballRd.AddForce(reflectVec * speed);
         }
 
-        if (collision.gameObject.CompareTag("BLOCK"))
+        if (other.gameObject.CompareTag("BLOCK"))
         {
             Vector3 currPos = transform.position;
 
             Vector3 incomVec = currPos - startPos;
-            Vector3 normalVec = collision.contacts[0].normal;
+            Vector3 normalVec = other.contacts[0].normal;
             Vector3 reflectVec = Vector3.Reflect(incomVec, normalVec);
             reflectVec = reflectVec.normalized;
 
             ballRd.AddForce(reflectVec * speed);
 
             //
-            Destroy(collision.gameObject);
+            Destroy(other.gameObject);
         }
 
         startPos = transform.position;
