@@ -53,10 +53,13 @@
     <UnityVersion>2021.3.5f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\BallController.cs" />
-    <Compile Include="Assets\BowlingBallController.cs" />
-    <Compile Include="Assets\RacketController.cs" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\BowlingBall.cs" />
     <Compile Include="Assets\BlockBallController.cs" />
+    <Compile Include="Assets\RacketController.cs" />
+    <Compile Include="Assets\Ball.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

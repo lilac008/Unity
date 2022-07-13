@@ -53,9 +53,12 @@
     <UnityVersion>2021.3.5f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scenes\PlayerController.cs" />
-    <Compile Include="Assets\Scenes\PlayerController2.cs" />
-    <Compile Include="Assets\Scenes\BoxController.cs" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Box.cs" />
+    <Compile Include="Assets\Player.cs" />
+    <Compile Include="Assets\Player2.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
