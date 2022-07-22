@@ -8,6 +8,7 @@ public class HpController : MonoBehaviour
 {
     GameObject hp;
 
+
     void Start() /// Start is called before the first frame update
     {
         hp = GameObject.Find("HpImage");
@@ -18,11 +19,12 @@ public class HpController : MonoBehaviour
         
     }
 
+
     public void HpControl() 
     {
         hp.GetComponent<Image>().fillAmount -= 0.1f;
 
-        if (hp.GetComponent<Image>().fillAmount <= 0) ///==0이면  
+        if (hp.GetComponent<Image>().fillAmount <= 0)   ///==0이면  
         {
             ///Death 애니메이션 실행
 

@@ -17,8 +17,7 @@ public class Player : MonoBehaviour
         ///Debug.Log("Update!"); 
 
 
-        ///Vector3 타입 : 벡터의 방향과 속도로 오브젝트 이동
-        ///deltaTime : 컴퓨터 성능에 따라 속도가 일정하도록 프레임 시간 간격을 동기화하는 값
+        ///Vector3 타입 : 벡터의 방향과 속도로 object 이동   /    Time.deltaTime : 1FPS  1초에 1개 그림, 100FPS 1초에 100개 그림, Time.deltaTime을 이용해 두 유저가 같은 결과값을 얻도록 함.
         if (Input.GetKey(KeyCode.LeftArrow) == true) { transform.Translate(Vector3.left * speed * Time.deltaTime); }
         if (Input.GetKey(KeyCode.RightArrow) == true){ transform.Translate(Vector3.right * speed * Time.deltaTime);}
         if (Input.GetKey(KeyCode.UpArrow) == true)   { transform.Translate(Vector3.forward * speed * Time.deltaTime); }

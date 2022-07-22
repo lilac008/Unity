@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{91677206-D4AD-C071-1B98-D41CC1642E86}</ProjectGuid>
+    <ProjectGuid>{AFA04A91-15CA-5067-7752-AD85E8B0E25E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,10 +56,10 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BowlingBall.cs" />
-    <Compile Include="Assets\Ball.cs" />
-    <Compile Include="Assets\BlockBallController.cs" />
-    <Compile Include="Assets\RacketController.cs" />
+    <Compile Include="Assets\Script\BowlingBall.cs" />
+    <Compile Include="Assets\Script\Ball.cs" />
+    <Compile Include="Assets\Script\BlockBall.cs" />
+    <Compile Include="Assets\Script\Racket.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

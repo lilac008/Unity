@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{3B445AD3-5FC7-E9B5-EB28-4F71242A317E}</ProjectGuid>
+    <ProjectGuid>{96EC3789-AD55-0F3E-F337-FB53DEE8B056}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -59,9 +59,9 @@
     <Compile Include="Assets\BulletGenerator.cs" />
     <Compile Include="Assets\BulletGenerator2.cs" />
     <Compile Include="Assets\Gun2Controller.cs" />
-    <Compile Include="Assets\BulletController.cs" />
-    <Compile Include="Assets\PlayerController.cs" />
-    <Compile Include="Assets\EnemyController.cs" />
+    <Compile Include="Assets\Bullet.cs" />
+    <Compile Include="Assets\Player.cs" />
+    <Compile Include="Assets\Enemy.cs" />
     <Compile Include="Assets\ScoreScript.cs" />
   </ItemGroup>
   <ItemGroup>

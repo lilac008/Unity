@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 2077940}
   m_Layer: 0
   m_Name: Racket
-  m_TagString: WALL
+  m_TagString: RACKET
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -750,7 +750,7 @@ GameObject:
   - component: {fileID: 1457363992}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: WALL
+  m_TagString: BALL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

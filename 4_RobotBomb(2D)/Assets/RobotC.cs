@@ -11,20 +11,18 @@ public class RobotC : MonoBehaviour
     Animator animator;
     private bool isMoving; 
 
-    // Start is called before the first frame update
-    void Start()
+    void Start() /// Start is called before the first frame update
     {
         robotRD = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         
     }
 
-    // Update is called once per frame
-    void Update()
+    void Update() /// Update is called once per frame
     {
         isMoving = false;
 
-        if (Input.GetKey(KeyCode.LeftArrow) && transform.position.x >= -8.0f) /// &&이하 캐릭터가 화면에서 벗어나는 걸 방지
+        if (Input.GetKey(KeyCode.LeftArrow) && transform.position.x >= -8.0f)     /// &&이후 : 캐릭터가 화면에서 벗어나는 걸 방지
         {
             isMoving = true;
             ///2  Walk Animation 시작

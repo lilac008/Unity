@@ -10,24 +10,22 @@ public class BombMaker : MonoBehaviour
     float delta = 0;
 
 
-    // Start is called before the first frame update
-    void Start()
+    void Start()/// Start is called before the first frame update
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    void Update()/// Update is called once per frame
     {
         delta += Time.deltaTime;
 
-        if (delta > interval)  ///1초마다 실행
+        if (delta > interval)                               ///1초마다 실행
         {
             delta = 0;
 
             GameObject bomb = Instantiate(bombPrefab);
-            int x = Random.Range(-8, 9);  ///화면범위 좌측 -8~ 우측 -8
-            bomb.transform.position = new Vector2(x, 5);    //x축, y축
+            int x = Random.Range(-8, 9);                     ///화면범위 좌측 -8~ 우측 -8
+            bomb.transform.position = new Vector2(x, 5);     ///x축, y축
         }
 
 

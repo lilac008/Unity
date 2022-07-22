@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletGenerator : MonoBehaviour
 {
-    public GameObject bulletPrefab; /// 데이터타입 GameObject
+    public GameObject bulletPrefab; 
 
     void Start()/// Start is called before the first frame update
     {
@@ -18,7 +18,7 @@ public class BulletGenerator : MonoBehaviour
         if (Input.GetMouseButtonDown(0))  ///마우스 클릭시
         {
             GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);  ///Prefab을 사용하여 총알 object 생성
-            bullet.GetComponent<BulletController>().ShootToEnemy();                                 ///Bulletcontroller에서 Shoot() 호출 (총알 발사) - bullet prefab에서 BulletController componet에서 Shoot()호출
+            bullet.GetComponent<Bullet>().ShootToEnemy();                                           ///bullet prefab에서 Bullet script componet에서 Shoot()호출
         }
 
 

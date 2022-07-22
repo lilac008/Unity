@@ -8,6 +8,7 @@ TagManager:
   - Target1
   - Target2
   - Target3
+  - PLAYER
   layers:
   - Default
   - TransparentFX
